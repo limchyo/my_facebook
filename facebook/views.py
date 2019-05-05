@@ -194,3 +194,17 @@ def remove_page(request, pk):
 
     ctx = {'page' : page}
     return render(request, "remove_page.html", ctx)
+
+def remove_comment(request, pk):
+    comment = Comment.objects.get(pk=pk)
+    article_pk = comment.article.pk
+
+    if request.method == "POST":
+        if request.POST.get("password") == comment.password:
+            comment.delete()
+            return redirect(f"/feed/{ article_pk }")
+        else:
+            return redirect("/fail/")
+
+    ctx = {'comment' : comment}
+    return render(request, "remove_comment.html", ctx)
