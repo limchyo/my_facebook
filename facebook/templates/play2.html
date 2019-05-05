@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Play2</title>
+  </head>
+  <body>
+    {{ name }}님({{ age }}), 잘 보이나요?<br>
+    {{ cnt }}번째 방문이십니다!<br>
+
+    <!-- <h2>나의 일기</h2>
+    <h4>{{ diary.0 }}</h4>
+    <h4>{{ diary.1 }}</h4>
+    <h4>{{ diary.2 }}</h4> -->
+
+    <h2>나의 일기</h2>
+    {% for post in diary %}
+    <h4>{{ post }}</h4>
+    {% endfor %}
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Pages</title>
+  </head>
+  <style>
+    .container {
+
+    }
+    .page-card {
+      border: 1px solid #b2b2b2;
+      padding: 10px;
+      margin-top: 5px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      {% for page in pages %}
+      <div class="page-card">
+          {{ page.name }} - {{ page.master }}({{ page.category }})<br>
+          {{ page.text }}<br>
+          - {{ page.created_at }}
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
