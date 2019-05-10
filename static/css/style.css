@@ -2,7 +2,7 @@ body { background-color: #d7d8dc; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 .header {
-    background-color: #7a917f;
+    background-color: #475d9f;
     color: #fff;
     border-bottom: 1px solid #2c3863;
     height: 42px;
@@ -21,9 +21,9 @@ body { background-color: #d7d8dc; }
     right: 50px;
 }
 .searchbar {
-    border: 1px solid #536858;
-    /* background-color: #323f6b; */
-    background-color: #4a594d;
+    border: 1px solid #323f6b;
+    background-color: #323f6b;
+    /* background-color: #4a594d; */
     width: 100%;
     padding: 6px;
     margin-top: 7px;
