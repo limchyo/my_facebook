@@ -1,15 +1,17 @@
 {% extends 'base.html' %}
 {% block title %}뉴스피드 작성하기{% endblock %}
 {% block content %}
-    <div class="form_box">
-      <form class="" action="" method="post">
-        {% csrf_token %}
-        <h3>게시물 올리기</h3>
-        <input class="input_field" type="text" placeholder="글쓴이의 이름은?" name="author"><br>
-        <input class="input_field" type="password" placeholder="글 비밀번호" name="password"><br>
-        <input class="input_field" type="title" placeholder="제목을 입력해주세요" name="title"><br>
-        <textarea class="textarea_field" placeholder="내용을 입력해주세요" name="text"></textarea><br>
-        <button class="write_button">게시</button>
-      </form>
-    </div>
+<div class="container">
+  <div class="form_box">
+    <form class="" action="" method="post">
+      {% csrf_token %}
+      <h3>게시물 올리기</h3>
+      <input class="input_field" type="text" placeholder="글쓴이의 이름은?" name="author"><br>
+      <input class="input_field" type="password" placeholder="글 비밀번호" name="password"><br>
+      <input class="input_field" type="title" placeholder="제목을 입력해주세요" name="title"><br>
+      <textarea class="textarea_field" placeholder="내용을 입력해주세요" name="text"></textarea><br>
+      <button class="write_button">게시</button>
+    </form>
+  </div>
+</div>
 {% endblock %}

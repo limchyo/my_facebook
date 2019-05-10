@@ -1,12 +1,14 @@
 {% extends 'base.html' %}
 {% block title %}{{ article.title }} 삭제{% endblock %}
 {% block content %}
-    <div class="form_box">
-      <form class="" action="" method="post">
-        {% csrf_token %}
-        <h3>{{ article.title }}-삭제하기</h3>
-        <input class="input_field" type="password" placeholder="글 비밀번호" name="password"><br>
-        <button class="write_button">삭제</button>
-      </form>
-    </div>
+<div class="container">
+  <div class="form_box">
+    <form class="" action="" method="post">
+      {% csrf_token %}
+      <h3>{{ article.title }}-삭제하기</h3>
+      <input class="input_field" type="password" placeholder="글 비밀번호" name="password"><br>
+      <button class="write_button">삭제</button>
+    </form>
+  </div>
+</div>
 {% endblock %}

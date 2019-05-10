@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
 {% block title %}{{ page.name }} 삭제{% endblock %}
 {% block content %}
-    <div class="form_box">
-      <form class="" action="" method="post">
-        {% csrf_token %}
-        <h3>{{ page.name }} 페이지를 정말로 삭제하시겠습니까?</h3>
-        <button class="write_button">정말 삭제하기</button>
-      </form>
-    </div>
+<div class="container">
+  <div class="form_box">
+    <form class="" action="" method="post">
+      {% csrf_token %}
+      <h3>{{ page.name }} 페이지를 정말로 삭제하시겠습니까?</h3>
+      <button class="write_button">정말 삭제하기</button>
+    </form>
+  </div>
+</div>
 {% endblock %}
